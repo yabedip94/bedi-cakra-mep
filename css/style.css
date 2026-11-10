@@ -160,6 +160,10 @@ a:focus {
     background: #fdbe33;
 }
 
+.top-bar .container-fluid {
+    padding: 0;
+}
+
 .top-bar .logo {
     padding: 15px 0;
     text-align: left;
@@ -172,6 +176,7 @@ a:focus {
     font-size: 60px;
     line-height: 60px;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .top-bar .logo img {
@@ -218,13 +223,46 @@ a:focus {
 
 @media (min-width: 992px) {
     .top-bar {
-        padding: 0 60px;
+        padding: 0 75px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .top-bar .logo h1 {
+        font-size: 46px;
+        line-height: 60px;
+    }
+    .top-bar .top-bar-item {
+        justify-content: flex-end;
+    }
+    .top-bar .top-bar-text {
+        padding-left: 10px;
+    }
+    .top-bar .top-bar-text h3 {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+    .top-bar .top-bar-text p {
+        font-size: 12px;
+    }
+    .top-bar .top-bar-icon {
+        width: 32px;
+    }
+    .top-bar .top-bar-icon [class^="flaticon-"]::before {
+        font-size: 32px;
     }
 }
 
 @media (max-width: 991.98px) {
     .top-bar .logo {
         text-align: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .top-bar .logo h1 {
+        font-size: 38px;
+        line-height: 48px;
     }
 }
 
