@@ -619,6 +619,7 @@ a:focus {
 
 .feature .col-md-12 {
     background: #030f27;
+    display: flex;
 }
     
 .feature .col-md-12:nth-child(2n) {
@@ -627,6 +628,7 @@ a:focus {
 }
 
 .feature .feature-item {
+    width: 100%;
     min-height: 250px;
     padding: 30px;
     display: flex;
