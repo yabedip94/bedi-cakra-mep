@@ -1,0 +1,14 @@
+# Reference template folder (local reference only)
+builerz-master/
+
+# Scratch & test logs
+scratch/
+.playwright-mcp/
+
+# OS / Editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+
